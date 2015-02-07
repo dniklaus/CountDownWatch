@@ -6,7 +6,6 @@
  */
 
 #include "Timer.h"
-#include "TimerAdapter.h"
 #include "Watch.h"
 #include "WatchFsm.h"
 #include "WatchFsmState.h"

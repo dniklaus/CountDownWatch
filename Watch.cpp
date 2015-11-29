@@ -305,6 +305,16 @@ const char* Watch::currentStateString()
   }
 }
 
+bool Watch::isRunning()
+{
+  bool isRunning = false;
+  if (0 != m_fsm)
+  {
+    isRunning = (WatchFsmStateRunning::Instance() == m_fsm->state());
+  }
+  return isRunning;
+}
+
 bool Watch::isSigSelected()
 {
   return m_sig->isSelected();

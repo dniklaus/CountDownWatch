@@ -55,6 +55,7 @@ public:
   bool isMinSelected();
   bool isSecSelected();
   const char* currentStateString();
+  bool isRunning();
   bool isZero();
   wTime* getTime();
 
